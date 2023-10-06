@@ -6,7 +6,7 @@ This project was made possible with the help of [Next.js](https://nextjs.org/) a
 
 <br/>
 
-![Frame 10744](https://github.com/Osama-D/flashlight/assets/99812352/e1cec859-9e93-438c-b86e-8a1aa17f589e)
+![Frame 10744](https://github.com/Osama-D/Flashlight-Effect-Cursor/assets/99812352/6b035d1d-3341-4f86-af49-beb4d833fc1d)
 
 <hr style="height: 0.5px;">
 
