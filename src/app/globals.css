@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  cursor: none;
+}
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background: black;
+  cursor: none;
+  pointer-events: none;
+}
+
+.fixed-circle {
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+  /* this is flexible. you can change */
+  --circle-radius: 1px;
+  height: 100%;
+  width: 100%;
+  --mask: radial-gradient(
+      circle farthest-side at center center,
+      transparent var(--circle-radius),
+      #000 calc(var(--circle-radius) + 300px) 100%
+    )
+    50% 50%/100% 100% no-repeat;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  background: rgba(0, 0, 0, 0.9); /* Adjust the background color and opacity */
+  backdrop-filter: blur(20px); /* Adjust the blur radius as needed */
+}
+.titleSize {
+  @apply text-[50px] sm:text-[70px] md:text-[80px] lg:text-[90px] xl:text-[100px] 2xl:text-[120px];
+}
+.paragraphSize {
+  @apply font-light lg:font-normal text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px];
+}
